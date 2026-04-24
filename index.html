@@ -3,65 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cuban Medical Center</title>
+<title>Cuban Medical Centre</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: 'Segoe UI', sans-serif;
     background: #f4f6f8;
 }
 
 header {
     background: #0a3d62;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav {
-    background: #3c6382;
-    padding: 10px;
-    text-align: center;
+header h1 {
+    margin: 0;
 }
 
 nav a {
     color: white;
-    margin: 10px;
+    margin: 0 10px;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .hero {
-    background: url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3');
     background-size: cover;
     color: white;
-    padding: 100px 20px;
+    padding: 120px 20px;
     text-align: center;
 }
 
+.hero h2 {
+    font-size: 38px;
+}
+
+.btn {
+    background: #38ada9;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+}
+
 .section {
-    padding: 40px;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .services {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
 .card {
     background: white;
     padding: 20px;
-    flex: 1;
     border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 footer {
     background: #0a3d62;
     color: white;
+    padding: 20px;
     text-align: center;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+    color: white;
     padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
 }
 </style>
 </head>
@@ -69,39 +96,56 @@ footer {
 <body>
 
 <header>
-    <h1>Cuban Medical Center</h1>
-    <p>Quality Healthcare You Can Trust</p>
+    <h1>Cuban Medical Centre</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Book</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-</nav>
-
 <div class="hero">
-    <h2>Welcome to Cuban Medical Center</h2>
-    <p>We provide professional and affordable healthcare services</p>
+    <h2>Quality Healthcare You Can Trust</h2>
+    <p>Serving Chebunyo, Bomet and beyond</p>
+    <a href="#booking" class="btn">Book Appointment</a>
 </div>
 
-<div class="section">
+<div class="section" id="services">
     <h2>Our Services</h2>
     <div class="services">
         <div class="card">General Consultation</div>
         <div class="card">Laboratory Services</div>
         <div class="card">Pharmacy</div>
-        <div class="card">Emergency Care</div>
+        <div class="card">Maternal & Child Care</div>
+        <div class="card">Emergency Services</div>
     </div>
 </div>
 
-<div class="section">
-    <h2>Contact Us</h2>
-    <p>📞 Phone: +254XXXXXXXXX</p>
-    <p>📍 Location: Nairobi, Kenya</p>
+<div class="section" id="booking">
+    <h2>Book Appointment</h2>
+    <p>Choose your preferred method to book:</p>
+
+    <a href="https://wa.me/254723205692" class="btn">
+        📱 Book via WhatsApp
+    </a>
+
+    <a href="mailto:Cubanmedicalcentre@gmail.com" class="btn">
+        📧 Book via Email
+    </a>
 </div>
 
+<div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: +254723205692</p>
+    <p>📧 Email: Cubanmedicalcentre@gmail.com</p>
+    <p>📍 Location: Chebunyo, Bomet, Kenya</p>
+</div>
+
+<a href="https://wa.me/254723205692" class="whatsapp">💬</a>
+
 <footer>
-    <p>© 2026 Cuban Medical Center</p>
+    <p>© 2026 Cuban Medical Centre | All Rights Reserved</p>
 </footer>
 
 </body>
