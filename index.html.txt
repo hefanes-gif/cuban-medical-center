@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuban Medical Center</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f6f8;
+}
+
+header {
+    background: #0a3d62;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #3c6382;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3');
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.section {
+    padding: 40px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    border-radius: 10px;
+}
+
+footer {
+    background: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Cuban Medical Center</h1>
+    <p>Quality Healthcare You Can Trust</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+    <h2>Welcome to Cuban Medical Center</h2>
+    <p>We provide professional and affordable healthcare services</p>
+</div>
+
+<div class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">General Consultation</div>
+        <div class="card">Laboratory Services</div>
+        <div class="card">Pharmacy</div>
+        <div class="card">Emergency Care</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: +254XXXXXXXXX</p>
+    <p>📍 Location: Nairobi, Kenya</p>
+</div>
+
+<footer>
+    <p>© 2026 Cuban Medical Center</p>
+</footer>
+
+</body>
+</html>
